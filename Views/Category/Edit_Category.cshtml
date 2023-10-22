@@ -1,0 +1,12 @@
+﻿@model Shop.EF.tbl_Category
+
+@{
+    Layout = null;
+}
+
+<h2>Edit</h2>
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.CatId" />
+    <input type="text" name="Name" value="@Model.Category" />
+    <input type="submit" value="Update" class="btn btn-warning" />
+</form>
